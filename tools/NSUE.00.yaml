@@ -10,7 +10,7 @@ options:
     #include <include_asm.h>
     #include <ultra64.h>
   symbol_addrs_path: tools/symbol_addrs.txt
-  create_undefined_syms_auto: no
+  create_undefined_syms_auto: yes
   create_undefined_funcs_auto: no
   do_c_func_detection: yes
   hi_lo_max_distance: 20

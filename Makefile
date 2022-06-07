@@ -77,7 +77,7 @@ OPTFLAGS := -O2
 ASFLAGS := -G0 -EB -mtune=vr4300 -march=vr4300 -mabi=32 -I. -Iinclude -O1 --no-construct-floats
 BINOFLAGS := -I binary -O elf32-big
 CPP_LDFLAGS := -P -Wno-trigraphs -DBUILD_DIR=$(BUILD_DIR)
-LDFLAGS := -T $(BUILD_DIR)/$(LD_SCRIPT) -mips3 --accept-unknown-input-arch --no-check-sections -T tools/undefined_syms.txt
+LDFLAGS := -T $(BUILD_DIR)/$(LD_SCRIPT) -mips3 --accept-unknown-input-arch --no-check-sections -T tools/undefined_syms.txt -T undefined_syms_auto.txt
 Z64OFLAGS := -O binary --pad-to=$(ROM_SIZE) --gap-fill=0x00
 
 MKDIR := mkdir -p
